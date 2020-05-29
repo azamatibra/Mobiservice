@@ -525,6 +525,7 @@ img {
   margin: 0 auto;
   text-align: center;
   color: #000000;
+  margin-bottom: 100px;
 }
 
 .modal__form {
