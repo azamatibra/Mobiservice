@@ -3890,12 +3890,52 @@
 $(document).ready(function() {
 	$('.header__burger').click(function(event) {
 		$('.header__burger,.header__menu').toggleClass('active');
-			$('body').toggleClass('lock');
-		});
-		});
+		$('body').toggleClass('lock');
+	});
+});
 
+// Отправка формы
+$(document).ready(function() {
 
-		let product = $("#product__hero");
+	$("#modal_form").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			var button = document.getElementById('modal__button')
+			button.addEventListener("click", function () {
+				swal("Ваша заявка принята!", "Спасибо, что выбрали нас", "success");
+			});
+			$("#modal_form").trigger("reset");
+		});
+		return false;
+	});
+	
+});
+// Отправка формы
+$(document).ready(function() {
+
+	$("#modal_form").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			var button = document.getElementById('modal__button')
+			button.addEventListener("click", function () {
+				swal("Ваша заявка принята!", "Спасибо, что выбрали нас", "success");
+			});
+			$("#modal_form").trigger("reset");
+		});
+		return false;
+	});
+	
+});
+
+let product = $("#product__hero");
 
 product.slick({
 	arrows: false,
@@ -3917,6 +3957,13 @@ product.slick({
 		settings:{
 			slidesToShow: 2,
 			slidesToScroll: 2,
+		}
+	},
+	{
+		breakpoint: 480,
+		settings:{
+			slidesToShow: 2,
+			slidesToScroll: 1,
 		}
 	},
 	{
