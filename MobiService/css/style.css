@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
+/*Обнуление*/
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;
 
 500;600;700&display=swap");
-
 * {
   padding: 0;
   margin: 0;
@@ -584,13 +585,13 @@ img {
   font-size: 18px;
   text-align: center;
   color: #FFFFFF;
-  -webkit-transition: .2s ease;
-  -o-transition: .2s ease;
-  transition: .2s ease;
   width: 228px;
   height: 52px;
   line-height: 52px;
   display: inline-block;
+  -webkit-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
   background: -o-linear-gradient(191.71deg, #03BDFF -13.4%, #298FFF 39.8%, #535BFF 105.63%);
   background: linear-gradient(258.29deg, #03BDFF -13.4%, #298FFF 39.8%, #535BFF 105.63%);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -600,6 +601,7 @@ img {
 
 .modal__link:hover {
   text-decoration: none;
+  color: blue;
 }
 
 .footer {
