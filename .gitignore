@@ -1,2 +1,10 @@
 # Игнорировать каталог src
-src
+src/
+# Игнорировать каталог node_modules
+node_modules/
+# Игнорировать каталог gulpfile.js
+gulpfile.js
+# Игнорировать каталог package.json
+package.json
+# Игнорировать каталог package-lock.json
+package-lock.json

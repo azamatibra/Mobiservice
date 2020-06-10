@@ -3060,10 +3060,6 @@ $(document).ready(function() {
 	});
 });
 
-// Инициализация WOW
-new WOW().init();
-
-
 
 let product = $("#product__hero");
 
@@ -3115,4 +3111,20 @@ $("#product-arrow-next").on("click", function (event) {
 	event.preventDefault();
 	product.slick("slickNext");
 });;
+
+// Инициализация WOW
+new WOW().init();
+
+
+// Якорь
+$(function(){
+	$('a[href^="#"]').click(function(){
+		var target = $(this).attr('href');
+		$('html, body').animate({scrollTop: $(target).offset().top}, 1000);
+		return false;
+	});
+});
+
+
+
 
