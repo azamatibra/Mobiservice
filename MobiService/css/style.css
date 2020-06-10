@@ -608,8 +608,6 @@ img {
 .footer {
   background: rgba(0, 0, 0, 0.96);
   padding: 87px 0px;
-  width: 1300px;
-  margin: 0 auto;
 }
 
 .footer__hero {
@@ -2269,12 +2267,6 @@ img {
 
   .offset-xl-11 {
     margin-left: 91.66667%;
-  }
-}
-
-@media (max-width: 1400px) {
-  .footer {
-    width: 100%;
   }
 }
 
